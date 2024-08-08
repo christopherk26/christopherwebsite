@@ -79,7 +79,7 @@ if selected == "Contact":
 
 if selected == "Projects":
     st.title("Projects")
-    st.write("""Here are some of the projects I have worked on over the years.""")
+    st.write("""Here are some of the projects I have worked on over the years. Click the grey boxes to be directed to the projects.""")
     with st. container(): st.write("---")
     left_column, middle_column, right_column = st.columns(3)
     with left_column:
