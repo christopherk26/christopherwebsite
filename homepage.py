@@ -88,7 +88,7 @@ if selected == "Projects":
             This was a game I wrote in javascript using my knowledge of physics. See how many points you can score!
             """
         )
-        gravity_url = "./GravityGame-master/gravity.html"
+        gravity_url = "https://christopherk26.github.io/gravity.html"
         st.markdown(f'<a href="{gravity_url}" target="_blank" style="text-decoration: none; color: inherit;">`Physics Game - Gravity`</a>', unsafe_allow_html=True)
         st.image(img_gravity, width = 400)
     with middle_column:
