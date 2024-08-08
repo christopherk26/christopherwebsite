@@ -57,3 +57,8 @@ if selected == "Home":
 
     with right_column:
         st.image(img_christopher, width = 700)
+
+if selected == "Contact":
+    with st.container():
+        st.title("Contact")
+        st.write('<a href="christopherkurdoghlian@gmail.com">christopherkurdoghlian@gmail.com</a>', unsafe_allow_html=True)
