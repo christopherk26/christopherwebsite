@@ -36,6 +36,8 @@ local_css("style.css")
 
 img_flower = Image.open("images/flower.png")
 img_christopher = Image.open("images/chris.JPG")
+img_threeD = Image.open("images/3d.png")
+img_gravity = Image.open("images/gravity.png")
 
 
 if selected == "Home":
@@ -86,6 +88,9 @@ if selected == "Projects":
             This was a game I wrote in javascript using my knowledge of physics. See how many points you can score!
             """
         )
+        gravity_url = "./GravityGame-master/gravity.html"
+        st.markdown(f'<a href="{gravity_url}" target="_blank" style="text-decoration: none; color: inherit;">`Physics Game - Gravity`</a>', unsafe_allow_html=True)
+        st.image(img_gravity, width = 400)
     with middle_column:
         st.header ("3D rendering")
         st.write(
@@ -93,8 +98,10 @@ if selected == "Projects":
             This was a 3D rendering project I worked on when I was interested in computer graphics. It uses webgl2.
             """
         )
-        st.write('<a href="christopherk26.github.io">3D rendering demonstration</a>', unsafe_allow_html=True)
-        
+        threeD_url = "https://christopherk26.github.io"
+        st.markdown(f'<a href="{threeD_url}" target="_blank" style="text-decoration: none; color: inherit;">`3D demonstration`</a>', unsafe_allow_html=True)
+        st.image(img_threeD, width = 400)
+
     with right_column:
         st.header ("Black-Scholes Options pricing")
         st.write(
@@ -102,4 +109,4 @@ if selected == "Projects":
             I have been interested in finance and markets since 2019 and eventually learned about quantitative finance. 
             This project shows how option contracts vary in price based on the parameters of the Black-Scholes equation.
             """
-        )
+             )
