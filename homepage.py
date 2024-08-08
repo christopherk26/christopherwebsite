@@ -96,7 +96,8 @@ if selected == "Projects":
         st.header ("3D rendering")
         st.write(
             """
-            This was a 3D rendering project I worked on when I was interested in computer graphics. It uses webgl2.
+            This was a 3D rendering project I worked on when I was interested in computer graphics. It uses webgl2. 
+            It helped me understand some of the essentials of linear algebra early on. 
             """
         )
         threeD_url = "https://christopherk26.github.io"
