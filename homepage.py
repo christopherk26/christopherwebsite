@@ -35,7 +35,7 @@ img_christopher = Image.open("images/christopher.png")
 if selected == "Home":
     # ---- HEADER SECTION ----
     with st.container():
-        st.title("Welcome to the offical website of Christopher Kurdoghlian")
+        st.title("Welcome to the website of Christopher Kurdoghlian")
     # st.write("""
     #         Christopher Kurdoghlian is currently a Student at California Polytechnic State University Pomona, (CPP), and is studying
     #         Computer Science and minoring in Data Science. He currently resides in La Canada, California. Christopher has two sibilings,
