@@ -38,6 +38,7 @@ img_flower = Image.open("images/flower.png")
 img_christopher = Image.open("images/chris.JPG")
 img_threeD = Image.open("images/3d.png")
 img_gravity = Image.open("images/gravity.png")
+img_options = Image.open("images/options.png")
 
 
 if selected == "Home":
@@ -109,4 +110,7 @@ if selected == "Projects":
             I have been interested in finance and markets since 2019 and eventually learned about quantitative finance. 
             This project shows how option contracts vary in price based on the parameters of the Black-Scholes equation.
             """
-             )
+        )
+        options_url = "https://optionpricingheatmap.streamlit.app/"
+        st.markdown(f'<a href="{options_url}" target="_blank" style="text-decoration: none; color: inherit;">`options pricing heatmap - interactive`</a>', unsafe_allow_html=True)
+        st.image(img_options, width = 400)
