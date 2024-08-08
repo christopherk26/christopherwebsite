@@ -93,6 +93,8 @@ if selected == "Projects":
             This was a 3D rendering project I worked on when I was interested in computer graphics. It uses webgl2.
             """
         )
+        st.write('<a href="christopherk26.github.io">3D rendering demonstration</a>', unsafe_allow_html=True)
+        
     with right_column:
         st.header ("Black-Scholes Options pricing")
         st.write(
