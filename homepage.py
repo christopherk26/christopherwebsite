@@ -33,7 +33,7 @@ def local_css (file_name):
 
 local_css("style.css")
 
-img_christopher = Image.open("images/christopher.png")
+img_christopher = Image.open("images/christopher1.png")
 img_flower = Image.open("images/flower.png")
 
 
