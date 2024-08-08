@@ -30,6 +30,7 @@ def local_css (file_name):
 local_css("style.css")
 
 img_christopher = Image.open("images/christopher.png")
+img_flower = Image.open("images/flower.png")
 
 
 if selected == "Home":
@@ -61,4 +62,9 @@ if selected == "Home":
 if selected == "Contact":
     with st.container():
         st.title("Contact")
-        st.write('<a href="christopherkurdoghlian@gmail.com">christopherkurdoghlian@gmail.com</a>', unsafe_allow_html=True)
+
+        left_column, right_column = st.columns(2)
+        with left_column:
+            st.write('<a href="christopherkurdoghlian@gmail.com">christopherkurdoghlian@gmail.com</a>', unsafe_allow_html=True)
+        with right_column:
+            st.image(img_flower, width = 800)
