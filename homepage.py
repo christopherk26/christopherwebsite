@@ -67,4 +67,4 @@ if selected == "Contact":
         with left_column:
             st.write('<a href="christopherkurdoghlian@gmail.com">christopherkurdoghlian@gmail.com</a>', unsafe_allow_html=True)
         with right_column:
-            st.image(img_flower, width = 800)
+            st.image(img_flower, width = 500)
