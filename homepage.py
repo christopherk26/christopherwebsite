@@ -62,7 +62,7 @@ if selected == "Home":
         )
 
     with right_column:
-        st.image(img_christopher, width = 350)
+        st.image(img_christopher, width = 300)
 
 if selected == "Contact":
     with st.container():
@@ -73,3 +73,31 @@ if selected == "Contact":
             st.write('<a href="christopherkurdoghlian@gmail.com">christopherkurdoghlian@gmail.com</a>', unsafe_allow_html=True)
         with right_column:
             st.image(img_flower, width = 500)
+
+if selected == "Projects":
+    st.title("Projects")
+    st.write("""Here are some of the projects I have worked on over the years.""")
+    with st. container(): st.write("---")
+    left_column, middle_column, right_column = st.columns(3)
+    with left_column:
+        st.header ("Physics Game")
+        st.write(
+            """
+            This was a game I wrote in javascript using my knowledge of physics. See how many points you can score!
+            """
+        )
+    with middle_column:
+        st.header ("3D rendering")
+        st.write(
+            """
+            This was a 3D rendering project I worked on when I was interested in computer graphics. It uses webgl2.
+            """
+        )
+    with right_column:
+        st.header ("Black-Scholes Options pricing")
+        st.write(
+            """
+            I have been interested in finance and markets since 2019 and eventually learned about quantitative finance. 
+            This project shows how option contracts vary in price based on the parameters of the Black-Scholes equation.
+            """
+        )
