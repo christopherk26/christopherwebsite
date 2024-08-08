@@ -6,13 +6,17 @@ from streamlit_option_menu import option_menu
 st.set_page_config(page_title="christopherkurdoghlian", page_icon=":evergreen_tree:", layout="wide")
 
 with st.sidebar:
+    linkedin_url = "https://www.linkedin.com/in/christopher-kurdoghlian-77b20927a/"
+    st.markdown(f'<a href="{linkedin_url}" target="_blank" style="text-decoration: none; color: inherit;"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="25" height="25" style="vertical-align: middle; margin-right: 10px;">`LinkedIn`</a>', unsafe_allow_html=True)
     selected = option_menu (
-        menu_title = None,
-        options=["Home", "Projects", "Contact"],
-        default_index = 0,
-        icons = [" ", " ", " "],
-        #orientation = "horizontal",
+    menu_title = None,
+    options=["Home", "Projects", "Contact"],
+    default_index = 0,
+    icons = [" ", " ", " "],
+    #orientation = "horizontal",
     )
+
+
 
 # hide_streamlit_style = """
 # <style>
