@@ -11,6 +11,7 @@ with st.sidebar:
         options=["Home", "Projects", "Contact"],
         default_index = 0,
         icons = [" ", " ", " "],
+        font="monospace",
         #orientation = "horizontal",
     )
 
