@@ -62,7 +62,7 @@ if selected == "Home":
         )
 
     with right_column:
-        st.image(img_christopher, width = 700)
+        st.image(img_christopher, width = 300)
 
 if selected == "Contact":
     with st.container():
