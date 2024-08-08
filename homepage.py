@@ -35,7 +35,7 @@ local_css("style.css")
 
 
 img_flower = Image.open("images/flower.png")
-img_christopher = Image.open("images/christopher1.png")
+img_christopher = Image.open("images/chris.JPG")
 
 
 if selected == "Home":
@@ -62,7 +62,7 @@ if selected == "Home":
         )
 
     with right_column:
-        st.image(img_christopher, width = 300)
+        st.image(img_christopher, width = 350)
 
 if selected == "Contact":
     with st.container():
