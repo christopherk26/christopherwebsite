@@ -56,4 +56,4 @@ if selected == "Home":
         )
 
     with right_column:
-        st.image(img_christopher, width = 600)
+        st.image(img_christopher, width = 700)
