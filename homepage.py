@@ -10,8 +10,7 @@ with st.sidebar:
         menu_title = None,
         options=["Home", "Projects", "Contact"],
         default_index = 0,
-        icons = [" ", " ", " "],
-        font="monospace",
+        icons = ["", "", ""],
         #orientation = "horizontal",
     )
 
