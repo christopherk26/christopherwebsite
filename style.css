@@ -3,3 +3,10 @@
 footer {visibility: hidden;}
 header {visibility: hidden;}
 */
+
+html, body {
+  overflow-x: hidden;
+}
+body {
+  position: relative
+}
