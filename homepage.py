@@ -79,9 +79,9 @@ if selected == "Contact":
 
 if selected == "Projects":
     st.title("Projects")
-    st.write("""Here are some of the projects I have worked on over the years. Click the grey boxes to be directed to the projects.""")
+    st.write("""Here are some of the projects I have worked on over the years. Click the grey boxes to be directed to the projects. Make sure to scroll down.""")
     with st. container(): st.write("---")
-    left_column, middle_column, right_column = st.columns(3)
+    left_column, right_column = st.columns(2)
     with left_column:
         st.header ("Physics Game")
         st.write(
@@ -92,17 +92,6 @@ if selected == "Projects":
         gravity_url = "https://christopherk26.github.io/gravity.html"
         st.markdown(f'<a href="{gravity_url}" target="_blank" style="text-decoration: none; color: inherit;">`Physics Game - Gravity`</a>', unsafe_allow_html=True)
         st.image(img_gravity, width = 400)
-    with middle_column:
-        st.header ("3D rendering")
-        st.write(
-            """
-            This was a 3D rendering project I worked on when I was interested in computer graphics. It uses webgl2. 
-            It helped me understand some of the essentials of linear algebra early on. 
-            """
-        )
-        threeD_url = "https://christopherk26.github.io"
-        st.markdown(f'<a href="{threeD_url}" target="_blank" style="text-decoration: none; color: inherit;">`3D demonstration`</a>', unsafe_allow_html=True)
-        st.image(img_threeD, width = 400)
 
     with right_column:
         st.header ("Black-Scholes Options pricing")
@@ -115,3 +104,18 @@ if selected == "Projects":
         options_url = "https://optionpricingheatmap.streamlit.app/"
         st.markdown(f'<a href="{options_url}" target="_blank" style="text-decoration: none; color: inherit;">`options pricing heatmap - interactive`</a>', unsafe_allow_html=True)
         st.image(img_options, width = 400)
+
+    left_column_rowtwo, right_column_rowtwo = st.columns(2)
+
+    with left_column_rowtwo:
+        st.header ("3D rendering")
+        st.write(
+            """
+            This was a 3D rendering project I worked on when I was interested in computer graphics. It uses webgl2. 
+            It helped me understand some of the essentials of linear algebra early on. 
+            """
+        )
+        threeD_url = "https://christopherk26.github.io"
+        st.markdown(f'<a href="{threeD_url}" target="_blank" style="text-decoration: none; color: inherit;">`3D demonstration`</a>', unsafe_allow_html=True)
+        st.image(img_threeD, width = 400)
+    
