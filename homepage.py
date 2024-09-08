@@ -39,6 +39,7 @@ img_christopher = Image.open("images/chris.JPG")
 img_threeD = Image.open("images/3d.png")
 img_gravity = Image.open("images/gravity.png")
 img_options = Image.open("images/options.png")
+optionsstrategies_url = Image.open("images/strategies.png")
 
 
 if selected == "Home":
@@ -83,15 +84,16 @@ if selected == "Projects":
     with st. container(): st.write("---")
     left_column, right_column = st.columns(2)
     with left_column:
-        st.header ("Physics Game")
+        st.header ("Options Strategies Visualized")
         st.write(
             """
-            This was a game I wrote in javascript using my knowledge of physics. See how many points you can score!
+            Every time I see the options charts on broker websites, I always wish they were interactive.
+            Using my python and matplotlib skills, I decided to make one that is.
             """
         )
-        gravity_url = "https://christopherk26.github.io/gravity.html"
-        st.markdown(f'<a href="{gravity_url}" target="_blank" style="text-decoration: none; color: inherit;">`Physics Game - Gravity`</a>', unsafe_allow_html=True)
-        st.image(img_gravity, width = 400)
+        options_url = "https://optionsstrategybychristopherk.streamlit.app/"
+        st.markdown(f'<a href="{optionsstrategies_url}" target="_blank" style="text-decoration: none; color: inherit;">`options pricing heatmap - interactive`</a>', unsafe_allow_html=True)
+        st.image(img_options, width = 400)
 
     with right_column:
         st.header ("Black-Scholes Options pricing")
@@ -118,4 +120,15 @@ if selected == "Projects":
         threeD_url = "https://christopherk26.github.io"
         st.markdown(f'<a href="{threeD_url}" target="_blank" style="text-decoration: none; color: inherit;">`3D demonstration`</a>', unsafe_allow_html=True)
         st.image(img_threeD, width = 400)
+
+    with right_column_rowtwo:
+        st.header ("Physics Game")
+        st.write(
+            """
+            This was a game I wrote in javascript using my knowledge of physics. See how many points you can score!
+            """
+        )
+        gravity_url = "https://christopherk26.github.io/gravity.html"
+        st.markdown(f'<a href="{gravity_url}" target="_blank" style="text-decoration: none; color: inherit;">`Physics Game - Gravity`</a>', unsafe_allow_html=True)
+        st.image(img_gravity, width = 400)
     
