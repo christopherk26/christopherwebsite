@@ -39,7 +39,7 @@ img_christopher = Image.open("images/chris.JPG")
 img_threeD = Image.open("images/3d.png")
 img_gravity = Image.open("images/gravity.png")
 img_options = Image.open("images/options.png")
-optionsstrategies_url = Image.open("images/strategies.png")
+img_optionsstrategies = Image.open("images/strategies.png")
 
 
 if selected == "Home":
@@ -91,9 +91,9 @@ if selected == "Projects":
             Using my python and matplotlib skills, I decided to make one that is.
             """
         )
-        options_url = "https://optionsstrategybychristopherk.streamlit.app/"
+        optionsstrategies_url = "https://optionsstrategybychristopherk.streamlit.app/"
         st.markdown(f'<a href="{optionsstrategies_url}" target="_blank" style="text-decoration: none; color: inherit;">`options pricing heatmap - interactive`</a>', unsafe_allow_html=True)
-        st.image(img_options, width = 400)
+        st.image(img_optionsstrategies, width = 400)
 
     with right_column:
         st.header ("Black-Scholes Options pricing")
