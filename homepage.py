@@ -40,6 +40,7 @@ img_threeD = Image.open("images/3d.png")
 img_gravity = Image.open("images/gravity.png")
 img_options = Image.open("images/options.png")
 img_optionsstrategies = Image.open("images/strategies.png")
+img_airport = Image.open("images/airport.png")
 
 
 if selected == "Home":
@@ -131,4 +132,25 @@ if selected == "Projects":
         gravity_url = "https://christopherk26.github.io/gravity.html"
         st.markdown(f'<a href="{gravity_url}" target="_blank" style="text-decoration: none; color: inherit;">`Physics Game - Gravity`</a>', unsafe_allow_html=True)
         st.image(img_gravity, width = 400)
-    
+
+
+    left_column_rowthree, right_column_rowthree = st.columns(2)
+
+    with left_column_rowthree:
+        st.header ("Airport Shortest Path")
+        st.write(
+            """
+            This was a project in my data structures class where I used about 5 different data structures that we 
+            had to implement ourselves in order to create an alogrithm. The algorithm was responsible for finding 
+            the shortests path between and two given airports that are on the list that was provided to us. 
+            (see the photo). The UI is on the command line, so you will need to download it and test it out
+            locally. Here is the githuv link
+            """
+        )
+        airport_url = "https://github.com/christopherk26/airportShortestPath"
+        st.markdown(f'<a href="{airport_url}" target="_blank" style="text-decoration: none; color: inherit;">`airport shortest path`</a>', unsafe_allow_html=True)
+        st.image(img_airport, width = 400)
+
+    with right_column_rowthree:
+       st.write()
+
