@@ -144,7 +144,7 @@ if selected == "Projects":
             had to implement ourselves in order to create an alogrithm. The algorithm was responsible for finding 
             the shortests path between and two given airports that are on the list that was provided to us. 
             (see the photo). The UI is on the command line, so you will need to download it and test it out
-            locally. Here is the githuv link
+            locally. Here is the github link.
             """
         )
         airport_url = "https://github.com/christopherk26/airportShortestPath"
